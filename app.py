@@ -110,7 +110,7 @@ def show_loading_screen():
 def load_models():
     """Load the trained model and scaler"""
     try:
-        model = pk.load(open('D:\Darshan_university\CSE_6TH_SEM\ML\LAP\model.pkl', 'rb'))
+        model = pk.load(open('model.pkl', 'rb'))
         scaler = pk.load(open('D:\Darshan_university\CSE_6TH_SEM\ML\LAP\scaler.pkl', 'rb'))
         return model, scaler
     except Exception as e:
